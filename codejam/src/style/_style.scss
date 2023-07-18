@@ -1,0 +1,94 @@
+
+body{
+   font-family: 'Montserrat', sans-serif;
+   color: $text;
+   background:$back;
+   max-width: 400px;
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+   font-size: 16px;
+   user-select: none;
+   align-items: center
+};
+.title{
+   text-align: center;
+   font-size: 24px;
+   font-weight: 700;
+}
+.buttons{
+   display: flex;
+   gap: 0 20px;
+   justify-content: center;
+   margin-bottom: 20px;
+   & button{
+      border-radius: 5px;
+      border: 1px solid black;
+      padding: 5px;
+      transition:  all;
+      &:hover{
+         transform: scale(1.05);
+      }
+   }
+}
+
+.datagame{
+   display: flex;
+   gap: 0 20px;
+   justify-content: center;
+   margin-bottom: 20px
+};
+.current-status{
+
+};
+.clicks{
+   background-color:cadetblue
+}
+.pazzle-block{
+   width: 100%;
+   padding-bottom: 100%;
+   
+   margin-bottom: 30px;
+   position: relative;
+   border-radius: 5px;
+   
+}
+.item{
+   position: absolute;
+   left: 0;
+   top: 0;
+   border-radius: 5px;
+   border: 1px solid black;
+   transition: transform 0.4s;
+   &:hover{
+      background-color: cadetblue;
+   }
+   span{
+      font-size: 24px;
+      font-weight: 700;
+   }
+}
+.itemFrame{
+   margin-bottom: 10px;
+   & span{
+     margin-left: 10px;
+   }
+}
+
+.sizeBlock{
+display: flex;
+}
+.sizeText{
+   margin-right: 10px;
+}
+label{
+   cursor: pointer;
+   text-decoration: underline;
+   margin-right: 10px;
+   &:hover{
+      background:cadetblue;
+   }
+}
+.input-item{
+display: none;
+}
